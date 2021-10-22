@@ -1,0 +1,187 @@
+
+#services{
+    height: fit-content;
+    width: 100%;
+}
+.rows{
+    height: 15vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.row-bars{
+    background-color: #03173a;
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+    border-radius: 10px;
+}
+.btn-tab{
+    background-color: #03173a;
+    display: block;
+    width: 100%;
+    color: white;
+    font-family: "Montserrat";
+    
+}
+.btn-side-tab{
+    background-color: white;
+    color: #03173a;
+    width: 100%;
+    border: 1px solid #0e49af;
+    margin-bottom: 2.5%;
+    display: block;
+    font-family: "Montserrat";
+}
+.btn-active, .btn-tab:hover, .opt-value:hover, .btn-side-tab:hover{
+    background-color: rgb(38, 81, 236);
+    border: 1px solid #0e49af;
+    /*background-color: rgb(238, 77, 117);
+    */color: white;
+    border: none;
+}
+.data-tabs,
+.data-tab{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.data-tabs-active{
+    display: block;
+}
+.section-intro{
+    width: 100%;
+    text-align: center;
+}
+.section-intro .heading h3{
+    color: #03173a;
+    font-family: "Montserrat Bold";
+}
+.section-intro .image img{
+    height: 20%;
+    width: 20%;
+}
+.section-intro .descpription{
+    padding: 0% 13% 0% 13%;
+}
+.content{
+    width: 100%;
+    height: 80%;
+    display: inline-flex;
+}
+.content .side-bars{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2.5%;
+}
+.content .information {
+    width: 75%;
+    height: 100%; 
+}
+.content .information .infor{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.content .information .infor .sys-card{
+    margin-top: 3%;
+    margin-right: 3%;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 370px;
+    text-align: center;
+    background-color: white;
+}
+.content .information .infor .sys-card .image{
+    width: 100%;
+    height: 125px;
+}
+.content .information .infor .sys-card .card-body{
+    width: 100%;
+    height: 175px;
+    margin-top: 18%;
+    padding-bottom: 10px;
+
+}
+.content .information .infor .sys-card:first-child{
+    margin-right: 2.5%;
+}
+.content .information .infor .sys-card:hover{
+    box-shadow: rgb(179, 179, 179) 0px 0px 15px;  
+
+}
+/*
+* RESPONSIVENESS
+*/
+@media (max-width:820px) {
+    .rows{
+        justify-content: unset;
+        align-items: unset;
+        width: 100%;
+        padding-top: 2.5%;
+        height: 5vh;
+        margin-bottom: 5%;    
+    }
+    .row-bars{
+        width: 100%;
+        height:100% ;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+    }   
+    .content .side-bars{
+        width: 100%;
+        padding-inline: 2.5%;
+        align-items: center;
+    }
+    .btn-side-tab{
+        width: 60%;
+    }
+    .content .information{
+        width: 100%;
+        padding: 2.5%;
+    } 
+}
+@media (max-width:720px) {
+    .section-intro .image img{
+        height: 50%;
+        width: 50%;
+    }
+}
+@media (max-width:500px) {
+    .btn-side-tab{
+        width: 100%;
+    }
+
+}
+@media (max-width:580px) {
+    .section-intro .heading{
+        margin-top: 200px;
+    }
+    .content .information .infor .sys-card{
+        width: 100%;
+        margin-inline: 2.5%;
+        height: fit-content;
+    }
+    .content .information .infor .sys-card .card-body{
+        margin-top: 200px;
+    }
+    .row-bars{
+        display: flex;
+        flex-wrap: wrap;
+    }   
+    .btn-tab{
+        margin-bottom: 2.5%;
+        display: flex;
+    }   
+    .data-tabs,
+    .data-tab{
+      margin-top: 125px
+    }
+}
